@@ -1,0 +1,11 @@
+primaryTitle	directors
+House of Games	David Mamet
+Bruce Almighty	Tom Shadyac
+A Cry in the Dark	Fred Schepisi
+Before Sunrise	Richard Linklater
+Emma	Douglas McGrath
+Footlight Parade	Lloyd Bacon
+Europa	Lars von Trier
+Stanley & Iris	Martin Ritt
+An American in Paris	Vincente Minnelli
+Scarface	Brian De Palma

@@ -1,0 +1,11 @@
+primaryTitle	directors
+A Cry in the Dark	Fred Schepisi
+Before Sunrise	Richard Linklater
+Emma	Douglas McGrath
+Footlight Parade	Lloyd Bacon
+Europa	Lars von Trier
+Midnight Cowboy	John Schlesinger
+Water Lilies	Céline Sciamma
+Hamlet	Kenneth Branagh
+The Shining	Stanley Kubrick
+Guys and Dolls	Joseph L. Mankiewicz

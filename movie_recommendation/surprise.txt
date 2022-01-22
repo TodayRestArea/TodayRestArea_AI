@@ -1,0 +1,11 @@
+primaryTitle	directors
+Bait	Antoine Fuqua
+Titanic	James Cameron
+Over Her Dead Body	Jeff Lowell
+Bruce Almighty	Tom Shadyac
+The Dukes of Hazzard	Jay Chandrasekhar
+Before Sunrise	Richard Linklater
+Birthday Girl	Jez Butterworth
+SpaceCamp	Harry Winer
+Surviving Christmas	Mike Mitchell
+Made Men	Louis Morneau
