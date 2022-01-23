@@ -83,7 +83,7 @@ Hugging face에 공개된 [DistilBERT](https://huggingface.co/docs/transformers/
 ### 1. Data
 Spotify에서 제공하는 여러 음악 요소를 가지고 Happy, Sad, Calm의 감정을 구분 하는 학습 진행
 
-학습 데이터는 <https://github.com/cristobalvch/Spotify-Machine-Learning>의 data_mopds.csv로 진행했으며 추론은 한국의 spotify playlist uri를 가져와 진행했다.
+학습 데이터는 <https://github.com/cristobalvch/Spotify-Machine-Learning>의 data_moods.csv로 진행했으며 추론은 spotify의 한국 playlist uri를 가져와 진행했다.
 ### 2. model
 Keras에서 제공하는 classifier 사용.
 ![](https://images.velog.io/images/yerimch/post/c394c51b-4e51-446b-a5f9-203592b4c7c6/image.png)
