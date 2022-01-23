@@ -27,13 +27,13 @@ Stopwords 제거는 [링크](https://www.ranks.nl/stopwords/korean)의 데이터
 
 Stopwords를 형태소 분석을 통해 조사, 어미등을 삭제해줬으나 위 데이터 보다 성능이 떨어져서 사용하지 않음.
 
-Early stopping 기점으로 Valid Accuracy
+Best Valid Accuracy
 
 - Hannanum :0.6716
 
 - Komoran :0.6699
 
-- Okt :0.66636
+- Okt :0.6636
 
 #### 2. BERT
 bert-base-multilingual-cased의 tokenizer와 classfication model사용.
@@ -43,7 +43,15 @@ optimizer는 Adam으로 진행.
 성능은 나쁘지 않은데 1epoch당 한 시간이 소요돼 사용하지 않았다.
 
 #### 3. KoBERT
+기본 bert tokenizer 사용.
 
+max-len이 보통 80이하로 끊겨서 80이하로 학습하니 acc는 좋았지만 실 적용에서 체감상 성능이 떨어져 200으로 늘려서 학습시킴.
+
+이 부분에 있어서는 추가 데이터 확보 필요
+
+Best Valid Accuracy : 0.7485
+
+[![](https://images.velog.io/images/yerimch/post/24b54f10-8606-4f85-b711-7e7d9c6cedec/Section-2-Panel-1-xa1da7868.png)](https://wandb.ai/yerim/2022SCHackathon?workspace=user-yerim)_image 클릭시 wandb로 이동_
 ## 2. 감정 기반 영화 추천
 
 ### 1. Data
@@ -55,14 +63,17 @@ hugging face에서 제공하는 [emotion dataset](https://huggingface.co/dataset
 
 ### 2. preprocessing
 - 영화 리뷰, 영화 아이디로 이루어진 sent table
+
 - 감독, 배우 아이디 crew table
+
 - 감독, 배우의 이름이 매치되는 name table
+
 - 영화 아이디, 영화 제목, 영화 개봉년도로 구성된 title table
 
 sent table로 추론 후 해당 table을 concat해 영화 제목, 감독을 받아오며 데이터가 오래돼서 90년도 이상의 영화만 받아오도록 처리.
 ### 3. model
 Hugging face에 공개된 [DistilBERT](https://huggingface.co/docs/transformers/model_doc/distilbert) 사용
-
+![](https://images.velog.io/images/yerimch/post/2aab44f8-25f9-4a58-a148-d393c5b9b27d/image.png)
 ## 3. 감정 기반 음악 추천
 ><https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/>를 기반으로 분류
 
@@ -72,7 +83,7 @@ Spotify에서 제공하는 여러 음악 요소를 가지고 Happy, Sad, Calm의
 학습 데이터는 <https://github.com/cristobalvch/Spotify-Machine-Learning>의 data_mopds.csv로 진행했으며 추론은 한국의 spotify playlist uri를 가져와 진행했다.
 ### 2. model
 Keras에서 제공하는 classifier 사용.
-
+![](https://images.velog.io/images/yerimch/post/c394c51b-4e51-446b-a5f9-203592b4c7c6/image.png)
 ## 4. Serving
 
 platform : AWS EC2
@@ -83,3 +94,9 @@ S3에 학습된 모델 파일 올려서 AWS cli활용해 다운로드 후 infere
 
 ---
 ### 이후 개발 목표
+
+감정의 공유가 목적인 만큼 유저의 대략적 정보(나이대, 성별, 지역 등)과 감정을 매치해 다른 유저 중 나와 동일한 감정을 느끼는 유저들이 이용한 콘텐츠를 추천할 수 있어야 한다.
+
+따라서 현재 콘텐츠에서 feedback을 받아 데이터를 수집한 다음 완전한 추천시스템 모델로 바꿔야한다.
+
+또한, BERT의 경우 무거운 편이라 추론시 시간이 걸리므로 feature engineering과 데이터 추가 수집을 통해 최대한 성능을 끌어올리며 가벼운 ML모델로 교체해야한다. 
