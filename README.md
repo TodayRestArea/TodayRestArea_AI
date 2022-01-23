@@ -73,7 +73,7 @@ hugging face에서 제공하는 [emotion dataset](https://huggingface.co/dataset
 
 - 영화 아이디, 영화 제목, 영화 개봉년도로 구성된 title table
 
-sent table로 추론 후 해당 table을 concat해 영화 제목, 감독을 받아오며 데이터가 오래돼서 90년도 이상의 영화만 받아오도록 처리.
+sent table로 추론 후 모든 table을 id  concat해 영화 제목, 감독을 받아오며 작품의 연도가 90년도 이상의 영화만 받아오도록 처리.
 ### 3. model
 Hugging face에 공개된 [DistilBERT](https://huggingface.co/docs/transformers/model_doc/distilbert) 사용
 ![](https://images.velog.io/images/yerimch/post/2aab44f8-25f9-4a58-a148-d393c5b9b27d/image.png)
