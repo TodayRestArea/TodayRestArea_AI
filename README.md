@@ -9,7 +9,9 @@ AI와 사람의 대화 데이터로 총 6개의 대분류 감정(분노, 슬픔,
 
 각 감정에 따른 데이터가 고르게 분포 되어 있음.  
 
-영화와 음악 추천을 위해 상처 감정은 삭제함![](https://images.velog.io/images/yerimch/post/daa31f66-909f-4081-8fbd-b7efd520ba7c/image.png)
+영화와 음악 추천을 위해 상처 감정은 삭제함
+
+![](https://images.velog.io/images/yerimch/post/daa31f66-909f-4081-8fbd-b7efd520ba7c/image.png)
 
 ### 2. preprocessing
 대화 중 인공지능의 대답은 삭제하고 사람의 발화만 저장
@@ -50,8 +52,8 @@ max-len이 보통 80이하로 끊겨서 80이하로 학습하니 acc는 좋았�
 이 부분에 있어서는 추가 데이터 확보 필요
 
 Best Valid Accuracy : 0.7485
-
-[![](https://images.velog.io/images/yerimch/post/24b54f10-8606-4f85-b711-7e7d9c6cedec/Section-2-Panel-1-xa1da7868.png)](https://wandb.ai/yerim/2022SCHackathon?workspace=user-yerim)_image 클릭시 wandb로 이동_
+<a href="https://wandb.ai/yerim/2022SCHackathon?workspace=user-yerim" target="_blank"><img src="https://images.velog.io/images/yerimch/post/24b54f10-8606-4f85-b711-7e7d9c6cedec/Section-2-Panel-1-xa1da7868.png" alt="drawing" width="200"/></a>
+_image 클릭시 wandb로 이동_
 ## 2. 감정 기반 영화 추천
 
 ### 1. Data
