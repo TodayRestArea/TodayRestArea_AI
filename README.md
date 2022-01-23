@@ -52,7 +52,8 @@ max-len이 보통 80이하로 끊겨서 80이하로 학습하니 acc는 좋았�
 이 부분에 있어서는 추가 데이터 확보 필요
 
 Best Valid Accuracy : 0.7485
-<a href="https://wandb.ai/yerim/2022SCHackathon?workspace=user-yerim" target="_blank"><img src="https://images.velog.io/images/yerimch/post/24b54f10-8606-4f85-b711-7e7d9c6cedec/Section-2-Panel-1-xa1da7868.png" alt="drawing" width="200"/></a>
+
+<a href="https://wandb.ai/yerim/2022SCHackathon?workspace=user-yerim" target="_blank"><img src="https://images.velog.io/images/yerimch/post/24b54f10-8606-4f85-b711-7e7d9c6cedec/Section-2-Panel-1-xa1da7868.png" alt="drawing" width="500"/></a>
 _image 클릭시 wandb로 이동_
 ## 2. 감정 기반 영화 추천
 
