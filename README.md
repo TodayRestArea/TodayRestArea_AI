@@ -7,10 +7,9 @@
 
 AI와 사람의 대화 데이터로 총 6개의 대분류 감정(분노, 슬픔, 불안, 상처, 당황, 기쁨)안에 60개의 소분류 감정이 있음.
 
-각 감정에 따른 데이터가 고르게 분포 되어 있음.  | ![](https://images.velog.io/images/yerimch/post/daa31f66-909f-4081-8fbd-b7efd520ba7c/image.png)
+각 감정에 따른 데이터가 고르게 분포 되어 있음.  
 
-
-영화와 음악 추천을 위해 상처 감정은 삭제함
+영화와 음악 추천을 위해 상처 감정은 삭제함![](https://images.velog.io/images/yerimch/post/daa31f66-909f-4081-8fbd-b7efd520ba7c/image.png)
 
 ### 2. preprocessing
 대화 중 인공지능의 대답은 삭제하고 사람의 발화만 저장
